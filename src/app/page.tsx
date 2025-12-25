@@ -1,3 +1,4 @@
+
 import { Container } from "@/components/container";
 import { GameProps } from '@/utils/types/games'
 import Link from 'next/link'
@@ -5,6 +6,10 @@ import Image from 'next/image'
 import { BsArrowRightSquare } from 'react-icons/bs'
 import { Input } from '@/components/input'
 import { GameCard } from '@/components/GameCard'
+
+
+
+
 async function getDalyGame() {
   try {
 
@@ -35,8 +40,11 @@ export default async function Home() {
   console.log(dalyGame);
   return (
 
+
     <main className="w-full">
+
       <div className="max-w-7xl mx-auto px-3">
+
         <Container>
 
           <h1 className="text-center front-bold text-xl mt-8 mb-5">Separamos um jogo exclusivo para você !</h1>
@@ -78,6 +86,7 @@ export default async function Home() {
         </Container>
 
       </div>
+
     </main>
 
   );
